@@ -14,7 +14,6 @@ body{
 
 .cover-text p{
     color:white;
-    background-color: red;
     letter-spacing: 4px;
     text-align: center;
 }
@@ -27,4 +26,20 @@ body{
     opacity: 0.5;
     width:100%;
     margin:20px 0 auto;
+}
+
+.navbar-nav li{
+    margin: 0 10px auto;
+}
+
+.col a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.col a:hover{
+    letter-spacing: 4px;
+    color:black;
+
 }
