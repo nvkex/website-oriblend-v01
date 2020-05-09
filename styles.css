@@ -58,12 +58,27 @@ hr.break{
 
 .passage{
     margin:20px 0;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
     max-width:460px;
 }
 
 .passage h1{
+    border-radius: 0px;
+    background-color: #cae8ca;
+    color:green;
+}
+
+.about-us-passage{
+    margin:20px 0px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.about-us-passage h1{
+    max-width:360px;
+    margin:auto;
+    border-radius: 100px;
     background-color: #cae8ca;
     color:green;
 }
