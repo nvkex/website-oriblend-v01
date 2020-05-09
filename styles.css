@@ -2,6 +2,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-link{
     text-transform: uppercase !important;
 }
@@ -35,11 +39,20 @@ body{
 .col a{
     transition: 0.5s;
     text-decoration: none;
-    color: white;
+    color: lightgrey;
 }
 
 .col a:hover{
     letter-spacing: 4px;
-    color:black;
+    color:white;
 
+}
+
+.card{
+    border:none;
+}
+
+hr.break{
+    border: 4px solid #5cb85c
+    ;
 }
