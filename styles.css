@@ -53,6 +53,20 @@ html {
 }
 
 hr.break{
-    border: 4px solid #5cb85c
-    ;
+    border: 4px solid #5cb85c;
 }
+
+.passage{
+    margin:20px 0;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    max-width:460px;
+}
+
+.passage h1{
+    background-color: #cae8ca;
+    color:green;
+}
+/*
+font-family: 'Nunito', sans-serif;
+*/
