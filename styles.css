@@ -1,7 +1,30 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-link{
     text-transform: uppercase !important;
+}
+
+.cover-text{
+    position: absolute;
+    bottom:30px;
+    color: black;
+}
+
+.cover-text p{
+    color:white;
+    background-color: red;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.brand-container{
+    position: relative;
+}
+
+.brand-container img{
+    opacity: 0.5;
+    width:100%;
+    margin:20px 0 auto;
 }
