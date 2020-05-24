@@ -1,3 +1,4 @@
-## Welcome to Oriblend
+## Oriblend Wesite v01
+First prototype of oriblend's website.
 
 
