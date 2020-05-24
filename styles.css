@@ -6,8 +6,25 @@ html {
     scroll-behavior: smooth;
 }
 
+#menu h1, #about h1{
+    border:1px solid lightgrey;
+    border-radius: 20px;
+}
+
+#about button{
+    width:100%;
+    border:none;
+    outline:none;
+    background-color: white;
+}
+
 .nav-link{
+    transition: 1s;
     text-transform: uppercase !important;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
 }
 
 .cover-text{
@@ -43,12 +60,12 @@ html {
     color: black;
 }
 
-.card{
+.menu-card{
     transition: 0.5s;
     border:none;
 }
 
-.card:hover{
+.menu-card:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
@@ -63,9 +80,9 @@ hr.break{
     max-width:460px;
 }
 
-.passage h1{
+.passage h2{
     border-radius: 0px;
-    background-color: #cae8ca;
+    /*background-color: #cae8ca;*/
     color:green;
 }
 
@@ -79,8 +96,8 @@ hr.break{
     max-width:360px;
     margin:auto;
     border-radius: 100px;
-    background-color: #cae8ca;
-    color:green;
+    background-color: #a1b9a1;
+    color:white;
 }
 /*
 font-family: 'Nunito', sans-serif;
