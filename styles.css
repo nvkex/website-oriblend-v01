@@ -43,17 +43,28 @@ html {
     position: relative;
 }
 
-.brand-container img{
-    opacity: 0.5;
+.brand-container{
     width:100%;
-    margin:20px 0 auto;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img-container{
+    height:400px;
+    width:100%;
+    opacity: 0.4;
+    background-image: url("src/cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 .navbar-nav li{
     margin: 0 5px auto;
 }
 
-.col-md-6 a{
+.col-md-4 a{
     letter-spacing: 4px;
     transition: 0.5s;
     text-decoration: none;
