@@ -11,7 +11,7 @@ html {
     border-radius: 20px;
 }
 
-#about button{
+#about button, #menu button{
     width:100%;
     border:none;
     outline:none;
