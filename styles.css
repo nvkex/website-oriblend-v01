@@ -45,13 +45,13 @@ html {
 
 .brand-container{
     width:100%;
-    
+    margin-bottom: 60px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .img-container{
-    height:400px;
+    height:450px;
     width:100%;
     opacity: 0.4;
     background-image: url("src/cover.jpg");
