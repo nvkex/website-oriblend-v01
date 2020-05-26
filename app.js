@@ -30,10 +30,59 @@ const MENU_ITEMS = {
         'Mango Dream',
         'Coconut Crush'
     ],
-    juices: [],
-    snacks: [],
+    juices: [
+        'Lychee',
+        'Mango',
+        'Banana',
+        'Apple',
+        'Acai',
+        'Grape',
+        'Pomegranate',
+        'Pineapple',
+        'Orange',
+        'Mosambi',
+        'Ginger Lime',
+        'Fresh Lime',
+        'Kiwi',
+        'Bitter Gourd',
+        'Spinach',
+        'Broccoli',
+        'Carrot',
+        'Ghaas Phoos(Spinach + Broccoli + Cabbage + Celery)',
+        'Beet My Carrot(Beetroot + Carrot + Ginger + Celery)'
+
+    ],
+    snacks: [
+        'Yogurt Bowl (Yogurt, banana, oats, Peanut Butter, Vanilla)',
+        'Coconut Munch (Oats, Coconut, Yogurt, Vanilla)',
+        'Seed Limit (Chia Seeds, Hemp Seeds, Spinach paste)',
+        'Hey Honey (Honey, Yogurt, Banana, Almond Milk)',
+        'Nuclear Nuts(Almonds, Cashews, Coconut, Walnuts, Dates, Apricots, Pistachios)',
+        'Paneer Panini',
+        'Paneer Cheese Wrap',
+        'Veggie Wrap',
+        'Cheesy Wrap',
+        'Egg Wrap(N)',
+        'Egg White Wrap(N)',
+        'Cheesy Egg White Wrap(N)',
+        'Egg White Veggie Wrap(N)',
+        'Oatmeal Cookie'
+    ],
     combos: [],
-    cafe: []
+    cafe: [
+        'Simple Chai',
+        'Masala Chai',
+        'Ilaichi Burst',
+        'Adrak Ilaichi',
+        'Green Tea',
+        'Ice tea',
+        'Sugar Free Tea',
+        'Coffee',
+        'Black Coffee',
+        'Black Coffee with Sugar',
+        'Cappuccino',
+        'Coco',
+    ]
 }
 
 $(document).ready(function () {
@@ -48,7 +97,7 @@ $(document).ready(function () {
     function addMenuItems(parentCard) {
         let category = parentCard.children[1].children[0].innerHTML;
         var listTemplate = ``;
-        
+
         //clear previous list items
         menuList.children[0].children[3].innerHTML = "";
 
@@ -56,33 +105,33 @@ $(document).ready(function () {
         menuList.children[0].children[1].innerHTML = category;
 
         //create list template
-        if (category.toLowerCase() == 'smoothies'){
-            MENU_ITEMS.smoothies.forEach( (item) => {
+        if (category.toLowerCase() == 'smoothies') {
+            MENU_ITEMS.smoothies.forEach((item) => {
                 listTemplate += `<li>${item}<li>`;
             });
         }
-        else if (category.toLowerCase() == 'juices'){
-            MENU_ITEMS.juices.forEach( (item) => {
+        else if (category.toLowerCase() == 'juices') {
+            MENU_ITEMS.juices.forEach((item) => {
                 listTemplate += `<li>${item}<li>`;
             });
         }
-        else if (category.toLowerCase() == 'lassi'){
-            MENU_ITEMS.lassi.forEach( (item) => {
+        else if (category.toLowerCase() == 'lassi') {
+            MENU_ITEMS.lassi.forEach((item) => {
                 listTemplate += `<li>${item}<li>`;
             });
         }
-        else if (category.toLowerCase() == 'snacks'){
-            MENU_ITEMS.snacks.forEach( (item) => {
+        else if (category.toLowerCase() == 'snacks') {
+            MENU_ITEMS.snacks.forEach((item) => {
                 listTemplate += `<li>${item}<li>`;
             });
         }
-        else if (category.toLowerCase() == 'oriblend cafe'){
-            MENU_ITEMS.cafe.forEach( (item) => {
+        else if (category.toLowerCase() == 'oriblend cafe') {
+            MENU_ITEMS.cafe.forEach((item) => {
                 listTemplate += `<li>${item}<li>`;
             });
         }
-        else if (category.toLowerCase() == 'combos'){
-            MENU_ITEMS.combos.forEach( (item) => {
+        else if (category.toLowerCase() == 'combos') {
+            MENU_ITEMS.combos.forEach((item) => {
                 listTemplate += `<li>${item}<li>`;
             });
         }
