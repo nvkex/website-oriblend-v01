@@ -18,6 +18,14 @@
         margin-bottom: 0px;
     }
 
+    .passage p{
+        font-size: 15px;
+    }
+    
+    .passage h2{
+        font-size:30px;
+    }
+
 }
 
 body{
@@ -115,7 +123,7 @@ html {
 }
 
 .menu-card img{
-    transition: 1s;
+    transition: 0.4s;
     position: relative;
 }
 
@@ -156,6 +164,81 @@ hr.break{
     background-color: #a1b9a1;
     color:white;
 }
-/*
-font-family: 'Nunito', sans-serif;
-*/
+
+#menuItemList{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-container{
+    overflow:auto;
+    margin:120px auto;
+    height:600px;
+    width:400px;
+    background-color:#2C3A47;
+    border-radius:10px;
+    padding:10px;
+}
+
+.list-container h3{
+    background-color: rgb(62, 82, 100);
+    border-radius:5px;
+}
+
+.list-container span{
+    border-radius:4px;
+    margin-top:3px;
+    color:white;
+    font-size: 1.17em;
+    position:relative;
+    float:right;
+    margin-right:4px;
+    cursor: pointer;
+}
+
+.list-container span:hover{
+    color:#FEA47F;
+}
+
+.list-container ul{
+    padding-left:0;
+    color:white;
+    list-style-type: none;
+}
+
+.list-container li{
+    border-bottom: 1px solid rgb(62, 82, 100);
+}
+
+/* width */
+.list-container::-webkit-scrollbar {
+    width: 14px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+  
+  /* Track */
+.list-container::-webkit-scrollbar-track {
+    background-color:#2C3A47;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+  
+  /* Handle */
+.list-container::-webkit-scrollbar-thumb {
+    background-color: rgb(62, 82, 100);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+  
+  /* Handle on hover */
+.list-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
