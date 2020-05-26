@@ -4,8 +4,20 @@
     }
 
     .cover-text{
-        top: 140px;
+        top: 160px;
     }
+
+    .cover-text h1{
+        font-size:40px;
+    }
+    .cover-text p{
+        font-size:10px;
+    }
+
+    .brand-container{
+        margin-bottom: 0px;
+    }
+
 }
 
 body{
@@ -16,9 +28,20 @@ html {
     scroll-behavior: smooth;
 }
 
-#menu h1, #about h1{
-    border:1px solid lightgrey;
-    border-radius: 20px;
+.navbar{
+    z-index:1;
+    overflow: hidden;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+#menu h1:hover, #about h1:hover{
+    text-decoration: underline;
+    text-decoration-color: lightgrey;
 }
 
 #about button, #menu button{
@@ -39,7 +62,7 @@ html {
 
 .cover-text{
     position: absolute;
-    bottom:30px;
+    bottom:0px;
     color: black;
 }
 
@@ -59,10 +82,12 @@ html {
 }
 
 .img-container{
+    margin-top:80px;
     height:450px;
     width:100%;
     opacity: 0.4;
     background-image: url("src/cover.jpg");
+    background-position-y: 40px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -80,12 +105,25 @@ html {
 }
 
 .menu-card{
+    overflow: hidden;
     transition: 0.5s;
     border:none;
 }
 
 .menu-card:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.menu-card img{
+    transition: 1s;
+    position: relative;
+}
+
+.menu-card:hover img{
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
 }
 
 hr.break{
