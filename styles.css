@@ -1,9 +1,13 @@
 @media (max-width: 1000px) {
     .menu-card{
-        width:150px !important;
+        width:120px !important;
+    }
+    .col-4 a{
+        letter-spacing: 1px !important;
     }
     .card-body h5{
-        font-size: 18px;
+        padding-left:0 !important;
+        font-size: 14px;
     }
     .offers{
         background-color: white !important;
@@ -120,14 +124,6 @@ html {
     text-align: center;
 }
 
-
-.brand-container{
-    position: relative;
-    width:100%;
-    margin-bottom: 60px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .navbar-nav li{
     margin: 0 2px auto;
