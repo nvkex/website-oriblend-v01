@@ -1,4 +1,2 @@
-## Oriblend Wesite v01
-First prototype of oriblend's website.
-
-
+# website-oriblend-v01
+Oriblend prototype website
