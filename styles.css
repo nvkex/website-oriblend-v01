@@ -1,32 +1,22 @@
-@media (max-width: 800px) {
-
-    .img-container{
-        background-position: 0 20%;
+@media (max-width: 1000px) {
+    .menu-card{
+        width:150px !important;
     }
-
-    .cover-text{
-        top: 100px;
+    .card-body h5{
+        font-size: 18px;
     }
-
-    .cover-text h1{
-        font-size:40px;
+    .offers{
+        background-color: white !important;
     }
-    .cover-text p{
-        font-size:10px;
+    .carousel-item{
+        width: 200px !important;
+        padding:0px !important;
     }
-
-    .brand-container{
-        margin-bottom: 0px;
+    .carousel-item img{
+        margin:0;
+        border-radius: 10px;
+        width: 200px !important;
     }
-
-    .passage p{
-        font-size: 15px;
-    }
-    
-    .passage h2{
-        font-size:30px;
-    }
-
 }
 
 body{
@@ -37,13 +27,38 @@ html {
     scroll-behavior: smooth;
 }
 
+.carousel-item{
+    padding:60px;
+}
+.carousel-item img{
+    margin:0px auto;
+    border-radius: 10px;
+    width: 500px !important;
+    height: 340px !important;
+}
+.offers{
+    margin-top:80px;
+    background-color: #2f2836;
+}
+
+#signUpBtn{
+    color:lightgrey;
+    border:1px solid rgb(194, 194, 194);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2); 
+    background-color: #43394e;
+}
+
+#signUpBtn:hover{
+    color:white !important;
+}
+
 .footer{
     padding:20px;
     bottom:0;
     left:0;
     color:white;
     width:100%;
-    background-color: #2C3A47;
+    background-color: #43394e;
 }
 
 .footer span{
@@ -52,7 +67,8 @@ html {
 }
 
 .navbar{
-    z-index:1;
+    height:80px !important;
+    z-index:2;
     overflow: hidden;
     background-color: white;
     position: fixed;
@@ -60,6 +76,7 @@ html {
     left:0;
     width: 100%;
     border-bottom: 1px solid lightgrey;
+    box-shadow: 0 0 2px 0 rgb(197, 197, 197);
 }
 
 #menu h1:hover, #about h1:hover{
@@ -79,9 +96,17 @@ html {
     text-transform: uppercase !important;
 }
 
-.nav-link:hover{
-    text-decoration: underline;
+.nav-link span{
+    font-weight: bold;
+    border-radius:6px;
+    color:black;
+    padding:6px 10px;
 }
+.nav-link span:hover{
+    color: #3c0479 !important;
+    background-color: rgb(248, 248, 248);
+}
+
 
 .cover-text{
     position: absolute;
@@ -104,23 +129,11 @@ html {
     background-attachment: fixed;
 }
 
-.img-container{
-    margin-top:80px;
-    height:450px;
-    width:100%;
-    opacity: 0.4;
-    background-image: url("src/cover.jpg");
-    background-position-y: 40px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-}
-
 .navbar-nav li{
-    margin: 0 5px auto;
+    margin: 0 2px auto;
 }
 
-.col-md-4 a{
+.col-4 a{
     letter-spacing: 4px;
     transition: 0.5s;
     text-decoration: none;
@@ -128,13 +141,16 @@ html {
 }
 
 .menu-card{
+    width:300px;
     overflow: hidden;
     transition: 0.5s;
     border:none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
 }
 
 .menu-card:hover{
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
 }
 
 .menu-card img{
@@ -150,7 +166,7 @@ html {
 }
 
 hr.break{
-    border: 4px solid #5cb85c;
+    border: 1px solid #5cb85c;
 }
 
 .passage{

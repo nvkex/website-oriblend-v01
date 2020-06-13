@@ -154,7 +154,7 @@ $(document).ready(function () {
 
         if (parentCard != null) {
             addMenuItems(parentCard);
-            $(menuList).fadeIn("slow");
+            $(menuList).fadeIn(400);
         }
     });
 
