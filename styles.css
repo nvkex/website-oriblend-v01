@@ -1,4 +1,7 @@
 @media (max-width: 1000px) {
+    .list-container{
+        margin:0 auto;
+    }
     .menu-card{
         width:120px !important;
     }
@@ -13,13 +16,13 @@
         background-color: white !important;
     }
     .carousel-item{
-        width: 200px !important;
         padding:0px !important;
     }
     .carousel-item img{
+        max-width: 400px !important;
+        max-height:274px !important;
         margin:0;
         border-radius: 10px;
-        width: 200px !important;
     }
 }
 
@@ -71,7 +74,6 @@ html {
 }
 
 .navbar{
-    height:80px !important;
     z-index:2;
     overflow: hidden;
     background-color: white;
@@ -193,6 +195,7 @@ hr.break{
 }
 
 #menuItemList{
+    z-index:2;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top:0;
